@@ -1,0 +1,17 @@
+C:\repos\RouteFinder\RouteFinder.Application\bin\Debug\net8.0\RouteFinder.Application.deps.json
+C:\repos\RouteFinder\RouteFinder.Application\bin\Debug\net8.0\RouteFinder.Application.dll
+C:\repos\RouteFinder\RouteFinder.Application\bin\Debug\net8.0\RouteFinder.Application.pdb
+C:\repos\RouteFinder\RouteFinder.Application\bin\Debug\net8.0\RouteFinder.Domain.dll
+C:\repos\RouteFinder\RouteFinder.Application\bin\Debug\net8.0\RouteFinder.Domain.pdb
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\RouteFinder.Application.csproj.AssemblyReference.cache
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\RouteFinder.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\RouteFinder.Application.AssemblyInfoInputs.cache
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\RouteFinder.Application.AssemblyInfo.cs
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\RouteFinder.Application.csproj.CoreCompileInputs.cache
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\RouteFin.BC2CE686.Up2Date
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\RouteFinder.Application.dll
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\refint\RouteFinder.Application.dll
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\RouteFinder.Application.pdb
+C:\repos\RouteFinder\RouteFinder.Application\obj\Debug\net8.0\ref\RouteFinder.Application.dll
+C:\repos\RouteFinder\RouteFinder.Application\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\repos\RouteFinder\RouteFinder.Application\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
