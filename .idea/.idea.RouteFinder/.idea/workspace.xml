@@ -11,14 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fcbedc-ffa4-48d1-8183-57d37f70c603" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RouteFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RouteFinder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs" afterDir="false" />
-    </list>
+    <list default="true" id="57fcbedc-ffa4-48d1-8183-57d37f70c603" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,7 +167,7 @@
       <workItem from="1721312558497" duration="864000" />
       <workItem from="1721313724399" duration="18071000" />
       <workItem from="1721392799771" duration="27790000" />
-      <workItem from="1721685711216" duration="7003000" />
+      <workItem from="1721685711216" duration="7797000" />
     </task>
     <servers />
   </component>
