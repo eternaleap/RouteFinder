@@ -18,7 +18,7 @@ public class SearchService : ISearchService
 
     public async Task<SearchResult> SearchAsync(SearchQuery query, CancellationToken cancellationToken)
     {
-        if (query.Filters!.OnlyCached.HasValue && query.Filters!.OnlyCached.Value)
+        if (query.Filters != null && query.Filters!.OnlyCached.HasValue && query.Filters!.OnlyCached.Value)
         {
             var routes = await _cacheProviderSearchService.GetAsyns(query);
             
@@ -33,7 +33,7 @@ public class SearchService : ISearchService
 
         var routesCached = await _cacheProviderSearchService.GetAsyns(query);
 
-        if (routesCached != null)
+        if (routesCached != null && routesCached.Length > 0)
             return GetResult(routesCached);
 
         var routesFromExternalServices = new List<Route>();
@@ -53,6 +53,9 @@ public class SearchService : ISearchService
 
     private static SearchResult GetResult(IReadOnlyCollection<Route> routes)
     {
+        if (routes.Count == 0)
+            return new SearchResult { Routes = routes.ToArray()};
+        
         return new SearchResult
         {
             Routes = routes.ToArray(),
