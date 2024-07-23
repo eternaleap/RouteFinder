@@ -1,3 +1,4 @@
+using Microsoft.OpenApi.Models;
 using RouteFinder.Application;
 using RouteFinder.Infrastructure;
 
@@ -6,9 +7,21 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1",
+        new OpenApiInfo
+        {
+            Title = "Route Finder",
+            Version = "v1"
+        }
+    );
+
+    var filePath = Path.Combine(System.AppContext.BaseDirectory, "RouteFinder.Api.xml");
+    c.IncludeXmlComments(filePath);
+});
+
 builder.Services.AddMemoryCache();
 builder.Services.AddSearchProviders();
 builder.Services.AddSearchProvidersImplementations();

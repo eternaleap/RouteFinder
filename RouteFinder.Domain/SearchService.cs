@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Logging;
+using RouteFinder.Domain.Entities;
 
 namespace RouteFinder.Domain;
 
@@ -15,22 +16,22 @@ public class SearchService : ISearchService
         _logger = logger;
     }
 
-    public async Task<SearchResponse> SearchAsync(SearchRequest request, CancellationToken cancellationToken)
+    public async Task<SearchResult> SearchAsync(SearchQuery query, CancellationToken cancellationToken)
     {
-        if (request.Filters!.OnlyCached.HasValue && request.Filters!.OnlyCached.Value)
+        if (query.Filters!.OnlyCached.HasValue && query.Filters!.OnlyCached.Value)
         {
-            var routes = await _cacheProviderSearchService.GetAsyns(request);
+            var routes = await _cacheProviderSearchService.GetAsyns(query);
             
             if (routes == null)
             {
                 _logger.LogWarning("The cache is empty");
-                return new SearchResponse();
+                return new SearchResult();
             }
 
             return GetResult(routes);
         }
 
-        var routesCached = await _cacheProviderSearchService.GetAsyns(request);
+        var routesCached = await _cacheProviderSearchService.GetAsyns(query);
 
         if (routesCached != null)
             return GetResult(routesCached);
@@ -40,19 +41,19 @@ public class SearchService : ISearchService
         foreach (var provider in _searchProviders)
         {
             if(await provider.IsAvailable())
-                responses.AddRange(await provider.Search(request));
+                responses.AddRange(await provider.Search(query));
             else
                 _logger.LogError($"{provider.GetType()} is unavailable, skipping it");
         }
         
-        await _cacheProviderSearchService.SetAsync(request, responses.ToArray());
+        await _cacheProviderSearchService.SetAsync(query, responses.ToArray());
 
         return GetResult(responses);
     }
 
-    private static SearchResponse GetResult(IReadOnlyCollection<Route> routes)
+    private static SearchResult GetResult(IReadOnlyCollection<Route> routes)
     {
-        return new SearchResponse
+        return new SearchResult
         {
             Routes = routes.ToArray(),
             MaxPrice = routes.Max(r => r.Price),

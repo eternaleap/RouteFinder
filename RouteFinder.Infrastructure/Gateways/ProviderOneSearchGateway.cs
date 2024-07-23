@@ -19,7 +19,14 @@ public class ProviderOneSearchGateway : IProviderOneSearchGateway
     {
         return new ProviderOneSearchResponse
         {
-            Routes = _staticRoutes.Concat(ProviderOneRoutesCreator.CreateInstances(10)).ToArray()
+            Routes = _staticRoutes.Concat(ProviderOneRoutesCreator.CreateInstances(10))
+                .Where(r => r.From.Contains(request.From))
+                .Where(r => r.To.Contains(request.To))
+                .Where(r => r.Price < request.MaxPrice)
+                .Where(r => r.TimeLimit > DateTime.Now)
+                .Where(r => r.DateTo > request.DateTo)
+                .Where(r => r.DateFrom > request.DateFrom)
+                .ToArray()
         };
     }
 

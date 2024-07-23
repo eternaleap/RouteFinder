@@ -9,6 +9,10 @@ namespace RouteFinder.Api.Controllers;
 public class PingController(ISearchService searchService)
     : ControllerBase
 {
+    /// <summary>
+    /// Проверка доступности хотя бы одного провайдера
+    /// </summary>
+    /// <returns></returns>
     [HttpGet(Name = "ping")]
     public async Task<IActionResult> IsAvailable()
     {
@@ -16,6 +20,6 @@ public class PingController(ISearchService searchService)
 
         if (isAvailable)
             return Ok();
-        else return Problem("Search services are unavailable. Please investigate logs for details");
+        return Problem("Search services are unavailable. Please investigate logs for details");
     }
 }

@@ -1,5 +1,6 @@
 using RouteFinder.Application.Gateways;
 using RouteFinder.Domain;
+using RouteFinder.Domain.Entities;
 
 namespace RouteFinder.Application.Providers;
 
@@ -12,14 +13,14 @@ public class ProviderTwoSearchService : IProviderSearchService
         _providerTwoSearchGateway = providerTwoSearchGateway;
     }
 
-    public async Task<IReadOnlyCollection<Route>> Search(SearchRequest request)
+    public async Task<IReadOnlyCollection<Route>> Search(SearchQuery query)
     {
         var routes = await _providerTwoSearchGateway.Search(new ProviderTwoSearchRequest
         {
-            Departure = request.Origin,
-            Arrival = request.Destination,
-            DepartureDate = request.OriginDateTime,
-            MinTimeLimit = request.Filters?.MinTimeLimit
+            Departure = query.Origin,
+            Arrival = query.Destination,
+            DepartureDate = query.OriginDateTime,
+            MinTimeLimit = query.Filters?.MinTimeLimit
         });
         
         return routes.Routes.Select(r => new Route

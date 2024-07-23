@@ -11,7 +11,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fcbedc-ffa4-48d1-8183-57d37f70c603" name="Changes" comment="" />
+    <list default="true" id="57fcbedc-ffa4-48d1-8183-57d37f70c603" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RouteFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RouteFinder/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Controllers/PingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Controllers/PingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderOneSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderOneSearchService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderTwoSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderTwoSearchService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/ICacheProviderSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/ICacheProviderSearchService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/IProviderSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/IProviderSearchService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/ISearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/ISearchService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Infrastructure/CacheProviderSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Infrastructure/CacheProviderSearchService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Infrastructure/Gateways/ProviderOneSearchGateway.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Infrastructure/Gateways/ProviderOneSearchGateway.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Infrastructure/Gateways/ProviderTwoSearchGateway.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Infrastructure/Gateways/ProviderTwoSearchGateway.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,25 +37,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Http/Http.Results/src/Ok.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Http/Http.Results/src/Ok.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/ActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/OkResult.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/StatusCodeResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/OkResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/StatusCodeResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Linq/src/System/Linq/AppendPrepend.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Linq/src/System/Linq/Concat.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Private.CoreLib/src/System/Collections/Generic/EqualityComparer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Private.CoreLib/src/System/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/Microsoft.Extensions.Caching.Memory/src/CacheEntry.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/Microsoft.Extensions.Caching.Memory/src/CacheEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/5535e31a712343a63f5d7d796cd874e563e5ac14/src/libraries/Microsoft.Extensions.Caching.Memory/src/MemoryCache.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/573461dc897731c11d6166574b77a8c3aabba220/src/libraries/Microsoft.Extensions.Caching.Abstractions/src/MemoryCacheExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3f96442e736242ca85aae31e40408e166400/00/623f74b2/CacheExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3f96442e736242ca85aae31e40408e166400/53/f9ba4902/IMemoryCache.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3f96442e736242ca85aae31e40408e166400/53/f9ba4902/IMemoryCache.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66fa4462ca7f423288b87658b29b937c73f8/20/d7f59af8/CacheEntry.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b2b917c507d64d0980727dbdd83b6585c8f8a0/08/3236d038/IEqualityComparer`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6217646b4a116ca8257be3d102f727835dc96c78ec114f3d47a0b4e1269fa6/TypeAdapter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c8e8b4221b3e6285b11533e6eac1d3942d51ec9f40f23250156a7f4d51e6d62c/SwaggerGenOptionsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/Telegram Desktop/Задание С# _Миксвел/ISearchService (1).cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/Telegram Desktop/Задание С# _Миксвел/ProviderOneSearchRequest (1).cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/Telegram Desktop/Задание С# _Миксвел/ProviderTwoSearchRequest (1).cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RouteFinder.Api/Controllers/PingController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RouteFinder.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -168,6 +190,8 @@
       <workItem from="1721313724399" duration="18071000" />
       <workItem from="1721392799771" duration="27790000" />
       <workItem from="1721685711216" duration="7797000" />
+      <workItem from="1721713887174" duration="6704000" />
+      <workItem from="1721720707984" duration="387000" />
     </task>
     <servers />
   </component>
@@ -182,94 +206,81 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs</url>
-          <line>21</line>
+          <line>22</line>
           <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="21" containingFunctionPresentation="Method 'SearchAsync'">
             <startOffsets>
-              <option value="860" />
+              <option value="885" />
             </startOffsets>
             <endOffsets>
-              <option value="925" />
+              <option value="948" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs</url>
-          <line>32</line>
+          <line>33</line>
           <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="32" containingFunctionPresentation="Method 'SearchAsync'">
             <startOffsets>
-              <option value="1160" />
+              <option value="1181" />
             </startOffsets>
             <endOffsets>
-              <option value="1231" />
+              <option value="1250" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderTwoSearchService.cs</url>
-          <line>16</line>
+          <line>17</line>
           <properties documentPath="C:\repos\RouteFinder\RouteFinder.Application\Providers\ProviderTwoSearchService.cs" initialLine="16" containingFunctionPresentation="Method 'Search'">
             <startOffsets>
-              <option value="510" />
+              <option value="541" />
             </startOffsets>
             <endOffsets>
-              <option value="804" />
+              <option value="827" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs</url>
-          <line>47</line>
+          <line>48</line>
           <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="45" containingFunctionPresentation="Method 'SearchAsync'">
             <startOffsets>
-              <option value="1661" />
+              <option value="1678" />
             </startOffsets>
             <endOffsets>
-              <option value="1734" />
+              <option value="1749" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RouteFinder.Infrastructure/CacheProviderSearchService.cs</url>
-          <line>16</line>
+          <line>17</line>
           <properties documentPath="C:\repos\RouteFinder\RouteFinder.Infrastructure\CacheProviderSearchService.cs" initialLine="16" containingFunctionPresentation="Method 'GetAsyns'">
             <startOffsets>
-              <option value="396" />
+              <option value="427" />
             </startOffsets>
             <endOffsets>
-              <option value="432" />
+              <option value="461" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/RouteFinder.Infrastructure/CacheProviderSearchService.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\repos\RouteFinder\RouteFinder.Infrastructure\CacheProviderSearchService.cs" initialLine="22" containingFunctionPresentation="Method 'SetAsync'">
-            <startOffsets>
-              <option value="558" />
-            </startOffsets>
-            <endOffsets>
-              <option value="559" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="34" containingFunctionPresentation="Method 'SearchAsync'">
+          <line>40</line>
+          <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="40" containingFunctionPresentation="Method 'SearchAsync'">
             <startOffsets>
-              <option value="1241" />
+              <option value="1383" />
             </startOffsets>
             <endOffsets>
-              <option value="1266" />
+              <option value="1425" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

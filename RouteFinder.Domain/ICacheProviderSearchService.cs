@@ -1,8 +1,10 @@
+using RouteFinder.Domain.Entities;
+
 namespace RouteFinder.Domain;
 
 public interface ICacheProviderSearchService
 {
-    public Task<Route[]> GetAsyns(SearchRequest request);
+    public Task<Route[]> GetAsyns(SearchQuery query);
 
-    public Task SetAsync(SearchRequest request, Route[] routes);
+    public Task SetAsync(SearchQuery query, Route[] routes);
 }
