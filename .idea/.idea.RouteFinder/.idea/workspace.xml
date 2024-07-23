@@ -12,21 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fcbedc-ffa4-48d1-8183-57d37f70c603" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RouteFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RouteFinder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Controllers/PingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Controllers/PingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderOneSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderOneSearchService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderTwoSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Application/Providers/ProviderTwoSearchService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/ICacheProviderSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/ICacheProviderSearchService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/IProviderSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/IProviderSearchService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/ISearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/ISearchService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RouteFinder.Infrastructure/CacheProviderSearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Infrastructure/CacheProviderSearchService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Infrastructure/Gateways/ProviderOneSearchGateway.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Infrastructure/Gateways/ProviderOneSearchGateway.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RouteFinder.Infrastructure/Gateways/ProviderTwoSearchGateway.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Infrastructure/Gateways/ProviderTwoSearchGateway.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +178,7 @@
       <workItem from="1721392799771" duration="27790000" />
       <workItem from="1721685711216" duration="7797000" />
       <workItem from="1721713887174" duration="6704000" />
-      <workItem from="1721720707984" duration="387000" />
+      <workItem from="1721720707984" duration="1108000" />
     </task>
     <servers />
   </component>
@@ -244,19 +231,6 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs</url>
-          <line>48</line>
-          <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="45" containingFunctionPresentation="Method 'SearchAsync'">
-            <startOffsets>
-              <option value="1678" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1749" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RouteFinder.Infrastructure/CacheProviderSearchService.cs</url>
           <line>17</line>
           <properties documentPath="C:\repos\RouteFinder\RouteFinder.Infrastructure\CacheProviderSearchService.cs" initialLine="16" containingFunctionPresentation="Method 'GetAsyns'">
@@ -268,19 +242,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs</url>
-          <line>40</line>
-          <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="40" containingFunctionPresentation="Method 'SearchAsync'">
-            <startOffsets>
-              <option value="1383" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1425" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -36,19 +36,19 @@ public class SearchService : ISearchService
         if (routesCached != null)
             return GetResult(routesCached);
 
-        var responses = new List<Route>();
+        var routesFromExternalServices = new List<Route>();
 
         foreach (var provider in _searchProviders)
         {
             if(await provider.IsAvailable())
-                responses.AddRange(await provider.Search(query));
+                routesFromExternalServices.AddRange(await provider.Search(query));
             else
                 _logger.LogError($"{provider.GetType()} is unavailable, skipping it");
         }
         
-        await _cacheProviderSearchService.SetAsync(query, responses.ToArray());
+        await _cacheProviderSearchService.SetAsync(query, routesFromExternalServices.ToArray());
 
-        return GetResult(responses);
+        return GetResult(routesFromExternalServices);
     }
 
     private static SearchResult GetResult(IReadOnlyCollection<Route> routes)

@@ -21,6 +21,6 @@ public class CacheProviderSearchService : ICacheProviderSearchService
     public async Task SetAsync(SearchQuery query, Route[] routes)
     {
         //Memory cache is thread safe, but for custom implementation I may use SemaphoreSlim .WaitAsync() and .Release(), but it's not required here
-         _cache.Set(query, routes);
+         _cache.Set(query, routes, DateTimeOffset.Now.AddHours(1));
     }
 }
