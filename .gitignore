@@ -1,4 +1,8 @@
-﻿# Build results
+﻿#IDE
+.idea
+.vscode
+
+# Build results
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
