@@ -9,9 +9,16 @@ public class SearchController(ILogger<SearchController> logger, ISearchService s
     : ControllerBase
 {
     [HttpPost(Name = "search")]
-    public async Task<SearchResponse> Search(SearchRequest request)
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<SearchResponse>> Search(SearchRequest request)
     {
-        logger.LogInformation("Request started");
-        return await searchService.SearchAsync(request, default);
+        logger.LogInformation("Search request started");
+        var result = await searchService.SearchAsync(request, default);
+
+        if (result.Routes == null || result.Routes.Length == 0)
+            return NotFound("No records found for such query");
+        
+        return Ok(result);
     }
 }

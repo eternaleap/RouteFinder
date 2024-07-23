@@ -11,22 +11,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fcbedc-ffa4-48d1-8183-57d37f70c603" name="Changes" comment="" />
+    <list default="true" id="57fcbedc-ffa4-48d1-8183-57d37f70c603" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RouteFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RouteFinder/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Controllers/SearchController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Http/Http.Results/src/Ok.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/ActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/OkResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/2f1db20456007c9515068a35a65afdf99af70bc6/src/Mvc/Mvc.Core/src/StatusCodeResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Collections.Concurrent/src/System/Collections/Concurrent/ConcurrentDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Linq/src/System/Linq/AppendPrepend.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/2aade6beb02ea367fd97c4070a4198802fe61c03/src/libraries/System.Linq/src/System/Linq/Concat.cs" root0="SKIP_HIGHLIGHTING" />
@@ -56,28 +62,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.RouteFinder: http.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.RouteFinder: http.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\S\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\S\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\S\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\S\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\S\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\S\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RouteFinder: http">
     <configuration name="RouteFinder: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RouteFinder.Api/RouteFinder.Api.csproj" />
@@ -166,7 +173,8 @@
       <workItem from="1721309713900" duration="545000" />
       <workItem from="1721312558497" duration="864000" />
       <workItem from="1721313724399" duration="18071000" />
-      <workItem from="1721392799771" duration="25414000" />
+      <workItem from="1721392799771" duration="27790000" />
+      <workItem from="1721685711216" duration="7003000" />
     </task>
     <servers />
   </component>
@@ -220,13 +228,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs</url>
-          <line>45</line>
+          <line>47</line>
           <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="45" containingFunctionPresentation="Method 'SearchAsync'">
             <startOffsets>
-              <option value="1557" />
+              <option value="1661" />
             </startOffsets>
             <endOffsets>
-              <option value="1630" />
+              <option value="1734" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
@@ -258,17 +266,17 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/RouteFinder.Domain/ISearchService.cs</url>
-          <line>26</line>
-          <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\ISearchService.cs" initialLine="26" containingFunctionPresentation="Method 'GetHashCode'">
+          <url>file://$PROJECT_DIR$/RouteFinder.Domain/SearchService.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\repos\RouteFinder\RouteFinder.Domain\SearchService.cs" initialLine="34" containingFunctionPresentation="Method 'SearchAsync'">
             <startOffsets>
-              <option value="688" />
+              <option value="1241" />
             </startOffsets>
             <endOffsets>
-              <option value="750" />
+              <option value="1266" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

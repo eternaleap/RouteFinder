@@ -1,0 +1,14 @@
+services:
+  routefinderapi:
+    image: routefinderapi
+    build:
+      context: .
+      dockerfile: RouteFinder.Api/Dockerfile
+      args:
+        - configuration=Debug
+    ports:
+      - 5031:5031
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw

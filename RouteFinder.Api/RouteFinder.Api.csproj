@@ -11,11 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Requests\" />
-    <Folder Include="Responses\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\RouteFinder.Infrastructure\RouteFinder.Infrastructure.csproj" />
   </ItemGroup>
 

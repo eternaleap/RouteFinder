@@ -41,6 +41,8 @@ public class SearchService : ISearchService
         {
             if(await provider.IsAvailable())
                 responses.AddRange(await provider.Search(request));
+            else
+                _logger.LogError($"{provider.GetType()} is unavailable, skipping it");
         }
         
         await _cacheProviderSearchService.SetAsync(request, responses.ToArray());
@@ -62,6 +64,6 @@ public class SearchService : ISearchService
 
     public async Task<bool> IsAvailableAsync(CancellationToken cancellationToken)
     {
-        return true;
+        return _searchProviders.Any(sp => sp.IsAvailable().Result);
     }
 }

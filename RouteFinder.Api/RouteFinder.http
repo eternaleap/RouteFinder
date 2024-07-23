@@ -1,6 +1,0 @@
-@RouteFinder_HostAddress = http://localhost:5031
-
-GET {{RouteFinder_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
