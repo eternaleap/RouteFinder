@@ -1,5 +1,6 @@
 using Microsoft.OpenApi.Models;
 using RouteFinder.Application;
+using RouteFinder.Cache.Redis;
 using RouteFinder.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +26,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddMemoryCache();
 builder.Services.AddSearchProviders();
 builder.Services.AddSearchProvidersImplementations();
+builder.Services.AddRouteCache();
 
 var app = builder.Build();
 

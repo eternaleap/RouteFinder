@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RouteFinder.Cache.Redis\RouteFinder.Cache.Redis.csproj" />
     <ProjectReference Include="..\RouteFinder.Infrastructure\RouteFinder.Infrastructure.csproj" />
   </ItemGroup>
 

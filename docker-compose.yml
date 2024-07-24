@@ -1,4 +1,13 @@
 services:
+  cache-redis:
+    image: redis:7.4-rc
+    restart: always
+    ports:
+      - 6379:6379
+    command: redis-server --save 20 1 --loglevel warning
+    volumes: 
+      - cache:/data
+
   routefinderapi:
     image: routefinderapi
     build:
@@ -10,5 +19,15 @@ services:
       - 5031:5031
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - REDIS_HOST = cache
+      - REDIS_PORT = 6379
+    depends_on:
+      - cache-redis
+    links:
+      - cache-redis
     volumes:
       - ~/.vsdbg:/remote_debugger:rw
+
+volumes:
+  cache:
+    driver: local

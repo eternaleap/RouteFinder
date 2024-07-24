@@ -1,26 +1,24 @@
 using RouteFinder.Domain;
-using Microsoft.Extensions.Caching.Memory;
 using RouteFinder.Domain.Entities;
 
 namespace RouteFinder.Infrastructure;
 
 public class CacheProviderSearchService : ICacheProviderSearchService
 {
-    private readonly IMemoryCache _cache;
+    private readonly ICacheRepository<SearchQuery, Route[]> _cacheRepository;
 
-    public CacheProviderSearchService(IMemoryCache cache)
+    public CacheProviderSearchService(ICacheRepository<SearchQuery, Route[]> cacheRepository)
     {
-        _cache = cache;
+        _cacheRepository = cacheRepository;
     }
 
     public async Task<Route[]> GetAsyns(SearchQuery query)
     {
-        return _cache.Get<Route[]>(query);
+        return await _cacheRepository.GetAsync(query);
     }
 
     public async Task SetAsync(SearchQuery query, Route[] routes)
     {
-        //Memory cache is thread safe, but for custom implementation I may use SemaphoreSlim .WaitAsync() and .Release(), but it's not required here
-         _cache.Set(query, routes, DateTimeOffset.Now.AddHours(1));
+        await _cacheRepository.SetAsync(query, routes, DateTimeOffset.Now.AddHours(1).TimeOfDay);
     }
 }
