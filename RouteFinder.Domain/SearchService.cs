@@ -46,7 +46,8 @@ public class SearchService : ISearchService
                 _logger.LogError($"{provider.GetType()} is unavailable, skipping it");
         }
         
-        await _cacheProviderSearchService.SetAsync(query, routesFromExternalServices.ToArray());
+        if(routesFromExternalServices.Count > 0)
+            await _cacheProviderSearchService.SetAsync(query, routesFromExternalServices.ToArray());
 
         return GetResult(routesFromExternalServices);
     }

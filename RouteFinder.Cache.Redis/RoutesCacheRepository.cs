@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace RouteFinder.Cache.Redis;
 
-public class RoutesCacheRepository : ICacheRepository<SearchQuery, Route[]>
+public class RoutesCacheRepository : ICacheRepository<SearchQuery, Route[]>, IDisposable
 {
     private readonly ConnectionMultiplexer _redis; 
     private readonly IDatabase _database;
