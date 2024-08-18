@@ -1,10 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
-using RouteFinder.Domain;
-using RouteFinder.Domain.Entities;
-using StackExchange.Redis;
-using Newtonsoft.Json;
+﻿using RouteFinder.Domain;
+using Enyim.Caching;
 
-namespace RouteFinder.Cache.Redis;
+namespace RouteFinder.DragonFly;
 
 public class RoutesCacheRepository : ICacheRepository<SearchQuery, Route[]>, IDisposable
 {

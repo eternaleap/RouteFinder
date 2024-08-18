@@ -11,8 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="MassTransit.Abstractions" Version="8.2.4-develop.1878" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"/>
+      <PackageReference Include="EnyimMemcachedCore" Version="3.2.1" />
     </ItemGroup>
 
 </Project>

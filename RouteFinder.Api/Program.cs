@@ -27,6 +27,7 @@ builder.Services.AddMemoryCache();
 builder.Services.AddSearchProviders();
 builder.Services.AddSearchProvidersImplementations();
 builder.Services.AddRouteCache();
+builder.Services.AddRouteCache();
 
 var app = builder.Build();
 

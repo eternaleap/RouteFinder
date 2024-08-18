@@ -16,7 +16,7 @@ public class SearchService : ISearchService
         _logger = logger;
     }
 
-    public async Task<SearchResult> SearchAsync(SearchQuery query, CancellationToken cancellationToken)
+    public virtual async Task<SearchResult> SearchAsync(SearchQuery query, CancellationToken cancellationToken)
     {
         if (query.Filters != null && query.Filters!.OnlyCached.HasValue && query.Filters!.OnlyCached.Value)
         {
