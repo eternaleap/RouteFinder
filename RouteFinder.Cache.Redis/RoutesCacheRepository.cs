@@ -22,7 +22,7 @@ public class RoutesCacheRepository : ICacheRepository<SearchQuery, Route[]>, IDi
     
     public Task DeleteAsync(SearchQuery key)
     {
-        var _ = _database.StringGetDeleteAsync(key.GetHashCode().ToString()).ConfigureAwait(false);
+        var _ = _database.StringGetDeleteAsync(key.GetHashCode().ToString());
         return Task.CompletedTask;
     }
  

@@ -6,11 +6,14 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
+    healthcheck:
+      test: rabbitmq-diagnostics check_port_connectivity
+      interval: 30s
+      timeout: 30s
+      retries: 10
     volumes:
       - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
       - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
-    networks:
-      - rabbitmq_go_net
   
   zoo1:
     image: confluentinc/cp-zookeeper:7.3.2
@@ -57,21 +60,22 @@ services:
     volumes: 
       - cache:/data
   
-  dragonfly:
-    image: 'docker.dragonflydb.io/dragonflydb/dragonfly'
-    ulimits:
-      memlock: -1
-    ports:
-      - "6379:6399"
+  #dragonfly:
+  #  image: 'docker.dragonflydb.io/dragonflydb/dragonfly'
+  #  ulimits:
+  #    memlock: -1
+  #  ports:
+  #    - "6379:6399"
     # For better performance, consider `host` mode instead `port` to avoid docker NAT.
     # `host` mode is NOT currently supported in Swarm Mode.
     # https://docs.docker.com/compose/compose-file/compose-file-v3/#network_mode
     # network_mode: "host"
-    volumes:
-      - dragonflydata:/data
+   # volumes:
+    #  - dragonflydata:/data
 
   routefinderapi:
     image: routefinderapi
+    restart: on-failure
     build:
       context: .
       dockerfile: RouteFinder.Api/Dockerfile
@@ -85,6 +89,7 @@ services:
       - REDIS_PORT = 6379
     depends_on:
       - cache-redis
+      - rabbitmq
     links:
       - cache-redis
     volumes:
