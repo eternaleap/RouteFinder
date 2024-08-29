@@ -92,6 +92,7 @@ services:
       - rabbitmq
     links:
       - cache-redis
+      - rabbitmq
     volumes:
       - ~/.vsdbg:/remote_debugger:rw
 
